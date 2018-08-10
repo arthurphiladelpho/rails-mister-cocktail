@@ -2,5 +2,7 @@
 <% @doses.each do |dose| %>
   <p>
     <%= dose.description %>
+    <%= link_to '[X]', dose_path(dose.id), method: :delete %>
   </p>
+
 <% end %>
